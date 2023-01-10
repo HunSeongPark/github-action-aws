@@ -28,4 +28,7 @@ chmod +x $JAR_NAME
 
 echo "> $JAR_NAME 실행"
 
-nohup java -jar -Duser.timezone=Asia/Seoul $JAR_NAME >> $REPOSITORY/nohup.out 2>&1 &
+nohup java -jar \
+        -Duser.timezone=Asia/Seoul \
+        -Dspring.config.location=/home/ubuntu/app/application.properties \
+        $JAR_NAME >> $REPOSITORY/nohup.out 2>&1 &
