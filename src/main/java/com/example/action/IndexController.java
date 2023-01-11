@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @Value("${my.name}")
-    private String myName4;
+    private String myNam5;
 
 
     @GetMapping("/")
     public String index() {
-        return myName4;
+        return myNam5;
     }
 }
