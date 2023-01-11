@@ -16,6 +16,8 @@ public class IndexController {
     @Value("${my.name}")
     private String myName;
 
+
+
     @GetMapping("/")
     public String index() {
         return myName;
